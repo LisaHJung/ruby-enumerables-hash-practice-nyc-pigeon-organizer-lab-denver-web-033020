@@ -5,24 +5,19 @@ def nyc_pigeon_organizer(data)
       array.each do |name|
         
         if !new_hash.has_key?(name)
-            new_hash[name]= {}
-        end
+          new_hash[key] = {}
+        end 
         
         if !new_hash[name].has_key?(property)
-          new_hash[name][property]= [ ]
+          new_hash[name][property] = []
         end
         
-        if !new_hash[name][property].include?(attribute)
-          new_hash[name][property] << attribute.to_s
-        end
-      end
+        if !new_hash[name][property].include? (attribute)
+          new_hash<< 
     end
   end
-  new_hash
 end
-
-
-
+end 
 
 
 
